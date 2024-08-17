@@ -12,5 +12,5 @@ public class Pie
     public string? ImageThumbnailUrl { get; set; }
     public bool IsPieOfWeek { get; set; }
     public bool InStock { get; set; }
-    public Category Category { get; set; } = default!;
+    public Category? Category { get; set; } = default!;
 }
