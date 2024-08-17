@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fhdoypysp7i4DpRHs/wJOgrbLnLUBhDY2E5udlivIeyt1LUuH6jVf50R2SzRgsmJTG2xiAp2ef1atHW/JTpi2A==",
+  "dgSpecHash": "M28Dvc6skMU=",
   "success": true,
   "projectFilePath": "/Users/jaismail/Documents/Projects/PieShop/PieShop/PieShop.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "/Users/jaismail/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.8/microsoft.entityframeworkcore.relational.8.0.8.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/microsoft.entityframeworkcore.sqlite/8.0.8/microsoft.entityframeworkcore.sqlite.8.0.8.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/8.0.8/microsoft.entityframeworkcore.sqlite.core.8.0.8.nupkg.sha512",
+    "/Users/jaismail/.nuget/packages/microsoft.entityframeworkcore.tools/8.0.8/microsoft.entityframeworkcore.tools.8.0.8.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
