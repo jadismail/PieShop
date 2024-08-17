@@ -1,16 +1,10 @@
 @model PieShop.ViewModels.PieListViewModel
 
 @{
-    Layout = null;
+    Layout = "_Layout";
+    ViewData["Title"] = "All Pies";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>Pies List</title>
-</head>
-<body>
 <h1>Pies List</h1>
 <hr /> 
 <h2>Category: @Model.CurrentCategory</h2>
@@ -22,5 +16,3 @@
         <p>@pie.Price.ToString("c")</p>
     </div>
 }
-</body>
-</html>
