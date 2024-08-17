@@ -1,4 +1,4 @@
-@model IEnumerable<PieShop.Models.Pie>
+@model PieShop.ViewModels.PieListViewModel
 
 @{
     Layout = null;
@@ -13,7 +13,8 @@
 <body>
 <h1>Pies List</h1>
 <hr /> 
-@foreach (var pie in Model)
+<h2>Category: @Model.CurrentCategory</h2>
+@foreach (var pie in Model.Pies)
 {
     <div>
         <h2>@pie.Name</h2>
