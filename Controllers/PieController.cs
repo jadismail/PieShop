@@ -13,7 +13,7 @@ public class PieController : Controller
         _pieRepo = pieRepo;
         _categoryRepo = categoryRepo;
     }
-    public IActionResult Index()
+    public IActionResult List()
     {
         var pies = _pieRepo.GetPies();
         return View(pies);
