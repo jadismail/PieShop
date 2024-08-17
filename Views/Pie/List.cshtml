@@ -1,0 +1,25 @@
+@model IEnumerable<PieShop.Models.Pie>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pies List</title>
+</head>
+<body>
+<h1>Pies List</h1>
+<hr /> 
+@foreach (var pie in Model)
+{
+    <div>
+        <h2>@pie.Name</h2>
+        <p>@pie.ShortDescription</p>
+        <p>@pie.Price.ToString("c")</p>
+    </div>
+}
+</body>
+</html>
