@@ -11,4 +11,13 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 
+app.UseStaticFiles();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.MapDefaultControllerRoute();
+
 app.Run();
