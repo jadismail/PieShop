@@ -123,3 +123,7 @@
 /Users/jaismail/Documents/Projects/PieShop/PieShop/obj/Debug/net8.0/PieShop.pdb
 /Users/jaismail/Documents/Projects/PieShop/PieShop/obj/Debug/net8.0/PieShop.genruntimeconfig.cache
 /Users/jaismail/Documents/Projects/PieShop/PieShop/obj/Debug/net8.0/ref/PieShop.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/package-lock.json
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/package.json
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/PieShop.staticwebassets.runtime.json
+/Users/jaismail/Documents/Projects/PieShop/PieShop/obj/Debug/net8.0/PieShop.sourcelink.json
