@@ -13,6 +13,6 @@ public class CategoryRepository : ICategoryRepository
     
     public IEnumerable<Category> GetCategories()
     {
-        return _context.Categories.ToList();
+        return _context.Categories.OrderBy(c => c.CategoryName);
     }
 }
