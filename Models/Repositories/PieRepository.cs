@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using PieShop.Models.Context;
 
 namespace PieShop.Models.Repositories;
@@ -13,7 +14,7 @@ public class PieRepository : IPieRepository
     
     public IEnumerable<Pie> GetPies()
     {
-       return _context.Pies.ToList();
+       return _context.Pies.Include(p => p.Category);
     }
 
     public Pie GetPieById(int pieId)
@@ -45,6 +46,6 @@ public class PieRepository : IPieRepository
 
     public IEnumerable<Pie> GetPiesOfTheWeek()
     {
-       return _context.Pies.Where(p => p.IsPieOfWeek).ToList();
+       return _context.Pies.Include(p => p.Category).Where(p => p.IsPieOfWeek);
     }
 }
