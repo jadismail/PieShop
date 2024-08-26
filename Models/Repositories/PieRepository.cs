@@ -14,7 +14,7 @@ public class PieRepository : IPieRepository
     
     public IEnumerable<Pie> GetPies()
     {
-       return _context.Pies.Include(p => p.Category);
+       return _context.Pies.ToList();
     }
 
     public Pie GetPieById(int pieId)
@@ -46,6 +46,6 @@ public class PieRepository : IPieRepository
 
     public IEnumerable<Pie> GetPiesOfTheWeek()
     {
-       return _context.Pies.Include(p => p.Category).Where(p => p.IsPieOfWeek);
+       return _context.Pies.Where(p => p.IsPieOfWeek);
     }
 }
