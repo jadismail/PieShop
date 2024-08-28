@@ -20,6 +20,11 @@ public class PieController : Controller
         var pieListViewModel = new PieListViewModel(pies, "Cheese Cake");
 
         return View(pieListViewModel);
+    }
 
+    public IActionResult Details(int id)
+    {
+        var pie = _pieRepo.GetPieById(id);
+        return View(pie);
     }
 }

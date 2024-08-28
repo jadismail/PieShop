@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/jaismail/Documents/Projects/PieShop/PieShop
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/jaismail/Documents/Projects/PieShop/PieShop/Views/Pie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGllL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jaismail/Documents/Projects/PieShop/PieShop/Views/Pie/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGllL0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
