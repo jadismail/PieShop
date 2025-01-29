@@ -50,20 +50,16 @@ public class ShoppingCart : IShoppingCart
     {
         var shoppingCartItem = _context.ShoppingCartItems.SingleOrDefault(
             s => s.Pie.PieId == pie.PieId && s.ShoppingCartId == ShoppingCartId);
-
-        if (shoppingCartItem == null) return 0;
-        if (shoppingCartItem.Amount > 1)
-        {
-            shoppingCartItem.Amount--;
-        }
+       
+        if (shoppingCartItem is null) return 0;
+        
+        if(shoppingCartItem.Amount > 1)
+           shoppingCartItem.Amount--;
         else
-        {
             _context.ShoppingCartItems.Remove(shoppingCartItem);
-        }
-
+        
         _context.SaveChanges();
         return shoppingCartItem.Amount;
-
     }
 
     public List<ShoppingCartItem> GetShoppingCartItems()
@@ -86,6 +82,7 @@ public class ShoppingCart : IShoppingCart
         var total = _context.ShoppingCartItems
             .Where(c => c.ShoppingCartId == ShoppingCartId)
             .Select(c => c.Pie.Price * c.Amount)
+            .ToList()
             .Sum();
         return total;
     }
