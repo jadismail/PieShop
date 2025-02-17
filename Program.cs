@@ -10,7 +10,8 @@ builder.Services.AddDbContext<PieContext>(options =>
 
 builder.Services.AddScoped<IPieRepository, PieRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<IShoppingCart, ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+builder.Services.AddScoped<IShoppingCart, ShoppingCart>(ShoppingCart.GetCart);
+builder.Services.AddScoped<IShoppingCart, ShoppingCart>();
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 

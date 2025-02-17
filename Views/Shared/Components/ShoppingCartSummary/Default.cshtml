@@ -1,0 +1,22 @@
+@model ShoppingCartViewModel
+
+@if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
+{
+    <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link">
+                <svg class="shopping-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round" width="23px" height="33px">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l1.68 8.39a2 2 0 0 0 2 1.61h13"> </path>
+                    <path d="M5.64 5h18.5"></path>
+                </svg>
+                <span id="cart-status" class="h6">
+                    @Model.ShoppingCart.ShoppingCartItems.Count
+                </span>
+            </a>
+        </li>
+    </ul>
+}
