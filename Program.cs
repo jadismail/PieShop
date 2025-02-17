@@ -12,6 +12,7 @@ builder.Services.AddScoped<IPieRepository, PieRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IShoppingCart, ShoppingCart>(ShoppingCart.GetCart);
 builder.Services.AddScoped<IShoppingCart, ShoppingCart>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 
