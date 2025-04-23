@@ -9,9 +9,10 @@ public class CategoryMenu : ViewComponent
     private readonly ICategoryRepository _categoryRepository;
     public IEnumerable<Category> Categories { get; set; }
 
-    public CategoryMenu(ICategoryRepository categoryRepository)
+    public CategoryMenu(ICategoryRepository categoryRepository, IEnumerable<Category> categories)
     {
         _categoryRepository = categoryRepository;
+        Categories = categories;
     }
     
     public IViewComponentResult Invoke()
