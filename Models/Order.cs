@@ -28,6 +28,8 @@ public class Order
     public string? AddressLine2 { get; set; }
 
     [StringLength(50)]
+    [Required]
+    [DataType(DataType.PostalCode)]
     public string ZipCode { get; set; } = string.Empty;
 
     [StringLength(100)]
@@ -39,7 +41,7 @@ public class Order
     [StringLength(100)]
     public string Country { get; set; } = string.Empty;
 
-    [Required(ErrorMessage = "Please enter your phone number")]
+    [Required]
     [StringLength(50)]
     [DataType(DataType.PhoneNumber)]
     [Display(Name = "Phone number")]
