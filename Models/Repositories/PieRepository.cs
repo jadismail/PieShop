@@ -48,4 +48,9 @@ public class PieRepository : IPieRepository
     {
        return _context.Pies.Where(p => p.IsPieOfWeek);
     }
+
+    public IEnumerable<Pie> SearchPies(string searchQuery)
+    {
+        return _context.Pies.Where(p => p.Name.ToLower().Contains(searchQuery.ToLower()));
+    }
 }

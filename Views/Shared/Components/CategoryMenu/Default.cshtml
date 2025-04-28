@@ -5,11 +5,17 @@
         Shop
     </button>
     <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" asp-controller="Pie" asp-action="List">
+            All Categories
+            </a>
+        </li>
         @foreach (var category in Model.Categories)
         {
-            <li><a class="dropdown-item" 
-                   asp-controller="Pie" 
-                   asp-action="List" 
+            <li>
+                <a class="dropdown-item"
+                   asp-controller="Pie"
+                   asp-action="List"
                    asp-route-category="@category.CategoryName">@category.CategoryName</a></li>
         }
     </ul>

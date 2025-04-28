@@ -15,38 +15,38 @@ public class PieController : Controller
         _pieRepo = pieRepo;
         _categoryRepo = categoryRepo;
     }
-    public IActionResult List()
-    {
-        var pies = _pieRepo.GetPies();
-        var pieListViewModel = new PieListViewModel(pies, "Cheese Cake");
-    
-        return View(pieListViewModel);
-    }
-
-    // public IActionResult List(string category)
+    // public IActionResult List()
     // {
-    //     IEnumerable<Pie> pies;
-    //     string? currentCategory;
-    //     
-    //     if (string.IsNullOrEmpty(category))
-    //     {
-    //         pies = _pieRepo.GetPies().OrderBy(p => p.PieId);
-    //         currentCategory = "All pies";
-    //     }
-    //     else
-    //     { 
-    //         pies = _pieRepo.GetPies().Where(p => p.Category)
-    //     }
+    //     var pies = _pieRepo.GetPies();
+    //     var pieListViewModel = new PieListViewModel(pies, "Cheese Cake");
     //
-    //     return View(new PieListViewModel(pies, currentCategory));
-    //
+    //     return View(pieListViewModel);
     // }
     
-
+    public IActionResult List(string category)
+    {
+        IEnumerable<Pie> pies;
+        string? currentCategoryName;
+      
+        if (string.IsNullOrEmpty(category))
+        {
+            pies = _pieRepo.GetPies().OrderBy(p => p.PieId);
+            currentCategoryName = "All pies";
+        }
+        else
+        {
+            var currentCategory =
+                _categoryRepo.GetCategories().FirstOrDefault(c => c.CategoryName == category);
+            pies = _pieRepo.GetPies().Where(p => p.Category == currentCategory?.CategoryId);
+            currentCategoryName = currentCategory?.CategoryName ?? "All pies";
+        }
+    
+        return View(new PieListViewModel(pies, currentCategoryName));
+    }
+    
     public IActionResult Details(int id)
     {
         var pie = _pieRepo.GetPieById(id);
         return View(pie);
-        
     }
 }
