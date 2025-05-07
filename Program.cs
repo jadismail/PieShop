@@ -2,6 +2,7 @@ using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using PieShop.Models.Context;
 using PieShop.Models.Repositories;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,9 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<PieContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("PieShop")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>()
+                .AddEntityFrameworkStores<PieContext>();
 
 
 builder.Services.AddScoped<IPieRepository, PieRepository>();

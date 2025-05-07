@@ -39,11 +39,14 @@
                     </a>
                 </div>
                 <vc:shopping-cart-summary></vc:shopping-cart-summary>
+                <partial name="_LoginPartial"/>
+            
             </div>
         </nav>
     </header>
     <main>
         @RenderBody()
+        @await RenderSectionAsync("Scripts", required: false)
     </main>
 </div>
 
