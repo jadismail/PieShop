@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PieShop.Models;
 using PieShop.Models.Repositories;
 
 namespace PieShop.Controllers;
 
+[Authorize]
 public class OrderController : Controller
 {
     private readonly IOrderRepository _orderRepository;
