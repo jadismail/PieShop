@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace PieShop.Models.Context;
 
-public class PieContext : DbContext
+public class PieContext : IdentityDbContext
 {
     public DbSet<Pie> Pies { get; set; }
     public DbSet<Category> Categories { get; set; }

@@ -8,7 +8,7 @@ namespace PieShop.Pages;
 public class CheckoutPage : PageModel
 {
     [BindProperty]
-    public Order Order { get; set; }
+    public Order? Order { get; set; }
     
     private readonly IOrderRepository _orderRepository;
     private readonly IShoppingCart _shoppingCart;
@@ -40,7 +40,7 @@ public class CheckoutPage : PageModel
 
         if (ModelState.IsValid)
         {
-            _orderRepository.CreateOrder(Order);
+            if (Order != null) _orderRepository.CreateOrder(Order);
             _shoppingCart.ClearCart();
             return RedirectToPage("CheckoutCompletePage");
         }

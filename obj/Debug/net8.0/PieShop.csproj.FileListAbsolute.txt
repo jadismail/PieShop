@@ -127,3 +127,12 @@
 /Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/package.json
 /Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/PieShop.staticwebassets.runtime.json
 /Users/jaismail/Documents/Projects/PieShop/PieShop/obj/Debug/net8.0/PieShop.sourcelink.json
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/jaismail/Documents/Projects/PieShop/PieShop/obj/Debug/net8.0/PieShop.MvcApplicationPartsAssemblyInfo.cs
