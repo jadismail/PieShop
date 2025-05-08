@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<PieContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("PieShop")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PieShop")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<PieContext>();
