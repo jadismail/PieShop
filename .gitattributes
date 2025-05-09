@@ -1,0 +1,2 @@
+wwwroot/lib/bootstrap/node_modules/hugo-bin/vendor/hugo filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
