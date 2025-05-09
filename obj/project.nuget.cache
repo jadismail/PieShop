@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kcLyyYq6Rk+LNfx547HSEZmpjmsKbueqFgFS/KYnquXhSigFpdHTtqhICqJWtytlubVm+stX51TIMf0oBGhPfQ==",
+  "dgSpecHash": "dIq3+hO4Eq4=",
   "success": true,
   "projectFilePath": "/Users/jaismail/Documents/Projects/PieShop/PieShop/PieShop.csproj",
   "expectedPackageFiles": [
@@ -177,7 +177,10 @@
     "/Users/jaismail/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/system.threading.tasks.dataflow/7.0.0/system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "/Users/jaismail/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/jaismail/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512"
+    "/Users/jaismail/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512",
+    "/Users/jaismail/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "/Users/jaismail/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "/Users/jaismail/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.15/microsoft.netcore.app.host.osx-arm64.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }
